@@ -1,0 +1,29 @@
+#add{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .form{
+
+    }
+    .table{
+        text-align: center;
+        border-radius: 5px;
+        td{
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        tr:nth-child(even){
+            background-color: rgb(220, 216, 216);
+        }
+        .del{
+            color: red;
+            padding: 10px;
+           cursor: pointer;
+
+        }
+    }
+}
