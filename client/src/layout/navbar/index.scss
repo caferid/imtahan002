@@ -1,0 +1,105 @@
+#navbar {
+    position: sticky;
+    top: 100px;
+    left: 0px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 30px auto 30px auto;
+    height: 72px;
+    -webkit-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.75);
+
+    .mobile {
+        display: none;
+    }
+
+    .dev {
+        padding: 35px;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            p {
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            .imgbox {
+                width: 50px;
+            }
+        }
+
+        .links {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .dev {
+            display: none;
+        }
+
+        .mobile {
+            padding: 35px;
+            display: flex;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+
+                .imgbox {
+                    width: 40px;
+                }
+            }
+
+            .icon {
+                font-size: 20px;
+            }
+
+            .links {
+                display: none;
+            }
+
+            .open {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                position: absolute;
+                top: 55px;
+                left: 0;
+                width: 100%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                margin: auto;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.active {
+    color: orange !important;
+}
